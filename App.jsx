@@ -126,14 +126,14 @@ const App = () => {
               <View style={styles.noteStyle}>
                 <View>
                   <Text style={styles.titeStyle}>{item.item.note}</Text>
-                  <Text style={{color: 'black'}}>{item.item.desc}</Text>
+                  <Text style={styles.textBlack}>{item.item.desc}</Text>
                 </View>
                 <View>
                   <TouchableOpacity
                     onPress={() => {
                       deleteNote(item.item.id);
                     }}>
-                    <Text style={{color: 'red'}}>DELETE</Text>
+                    <Text style={styles.textRed}>DELETE</Text>
                   </TouchableOpacity>
                   <TouchableOpacity
                     onPress={() => {
@@ -143,7 +143,7 @@ const App = () => {
                       setSelectedId(item.item.id);
                       setShowCard(true);
                     }}>
-                    <Text style={{color: 'blue', marginTop: 10}}>EDIT</Text>
+                    <Text style={styles.textBlue}>EDIT</Text>
                   </TouchableOpacity>
                 </View>
               </View>
@@ -237,4 +237,7 @@ const styles = StyleSheet.create({
     paddingRight: 10,
   },
   titeStyle: {fontSize: 18, color: 'black'},
+  textBlack: {color: 'black'},
+  textRed: {color: 'red'},
+  textBlue: {color: 'blue', marginTop: 10},
 });
