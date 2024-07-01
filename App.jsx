@@ -189,6 +189,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     paddingLeft: 20,
     marginTop: 20,
+    color: 'black',
   },
   AddNoteView: {
     width: '90%',
@@ -221,7 +222,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignContent: 'center',
   },
-  AddNoteText: {textAlign: 'center', marginTop: 10, fontSize: 18},
+  AddNoteText: {
+    textAlign: 'center',
+    marginTop: 10,
+    fontSize: 18,
+    color: 'black',
+  },
   AddNewNoteText: {color: 'white', fontSize: 18, textAlign: 'center'},
   cancelText: {color: 'purple', fontSize: 18, textAlign: 'center'},
   noteStyle: {
